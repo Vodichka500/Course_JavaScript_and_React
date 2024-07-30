@@ -41,11 +41,50 @@ function addMoviesOnPage(data){
     movieList.innerHTML = "";
     let HTML = "";
     data.movies.sort().forEach((film, i) => {
-        movieList.innerHTML +=  `<li class="promo__interactive-item">${i+1}. ${film} 
+        if(film.length <= 21){
+            movieList.innerHTML +=  `<li class="promo__interactive-item">${i+1}. ${film} 
                             <div class="delete"></div>
                             </li> `
+        }else{
+            const filmShortName = film.slice(0, 22) + "...";
+            movieList.innerHTML +=  `<li class="promo__interactive-item">${i+1}. ${filmShortName} 
+                            <div class="delete"></div>
+                            </li> `
+        }
     })
+
+    document.querySelectorAll('.delete').forEach((btn, i) => {
+       btn.addEventListener('click', ()=>{
+           btn.parentElement.remove();
+           movieDB.movies.splice(i, 1);
+           addMoviesOnPage(data);
+       })
+    });
+
 }
 
 addMoviesOnPage(movieDB);
+
+document.getElementById('btn-add').addEventListener('click', event =>
+    addMovie(event, movieDB));
+
+function addMovie(event, data){
+    event.preventDefault()
+    const movie = document.querySelector('.adding__input').value;
+    if(movie === null || movie ==='' || !isNaN(movie) ){
+
+        document.querySelector('.adding__input').value = "";
+        document.querySelector('.adding__input').placeholder = 'Error';
+    }else{
+        if(document.getElementById('ifFavorite').checked){
+            console.log('Favorite movie have been added');
+        }
+        data.movies.push(document.querySelector('.adding__input').value );
+        addMoviesOnPage(data);
+
+        document.querySelector('.adding__input').value = "";
+        document.querySelector('.adding__input').placeholder = 'Movie added';
+    }
+
+}
 
