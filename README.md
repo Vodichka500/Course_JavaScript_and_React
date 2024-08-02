@@ -85,7 +85,7 @@ ___
 
 ### Section 3 -"Advanced JavaScript Basics"
 > - [x] 51.Additional Information on Basics
-> - [ ] 52.(d) Nullish Coalescing Operator (??) ES11
+> - [x] 52.(d) Nullish Coalescing Operator (??) ES11
 > - [ ] 53.(d) Optional Chaining Operator (?.) ES11
 > - [ ] 54.(d) Live Collections and Useful Methods
 > - [ ] 55.(d) Symbol Data Type
