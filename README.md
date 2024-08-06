@@ -86,13 +86,13 @@ ___
 ### Section 3 -"Advanced JavaScript Basics"
 > - [x] 51.Additional Information on Basics
 > - [x] 52.(d) Nullish Coalescing Operator (??) ES11
-> - [ ] 53.(d) Optional Chaining Operator (?.) ES11
-> - [ ] 54.(d) Live Collections and Useful Methods
+> - [x] 53.(d) Optional Chaining Operator (?.) ES11
+> - [x] 54.(d) Live Collections and Useful Methods
 > - [ ] 55.(d) Symbol Data Type
 > - [ ] 56.(d) Property Descriptors and Useful Object Methods
 > - [ ] 57.(*) Iterable Constructs
-> - [ ] 58.(*) Map
-> - [ ] 59.(*) Set
+> - [x] 58.(*) Map
+> - [x] 59.(*) Set
 > - [ ] 60.(*) BigInt
 
 ### Section 4 - "JavaScript at Work"
