@@ -97,24 +97,24 @@ ___
 
 ### Section 4 - "JavaScript at Work"
 > - [x] 61.What This Module Will Be About
-> - [ ] 62.ClassList and Event Delegation
-> - [ ] 63.Creating Tabs in a New Project
-> - [ ] 64.Scripts and Their Execution Time. setTimeout and setInterval
-> - [ ] 65.(d) Garbage Collector and Memory Leaks
-> - [ ] 66.(*) WeakMap and WeakSet
-> - [ ] 67.Working with Dates
-> - [ ] 68.Creating a Countdown Timer on the Website
-> - [ ] 69.(*) Handling Past Dates
-> - [ ] 70.Document Parameters, Window, and Working with Them
-> - [ ] 71.Creating a Modal Window
-> - [ ] 72.Modifications to the Modal Window
-> - [ ] 73.(d) MutationObserver, ResizeObserver, and contenteditable
-> - [ ] 74.Constructor Functions
-> - [ ] 75.Call Context. This
-> - [ ] 76.Classes (ES6)
-> - [ ] 77.Where to Track Information about New Standards
-> - [ ] 78.Using Classes in Real Work
-> - [ ] 79.Rest Operator and Default Parameters (ES6)
+> - [x] 62.ClassList and Event Delegation
+> - [x] 63.Creating Tabs in a New Project
+> - [x] 64.Scripts and Their Execution Time. setTimeout and setInterval
+> - [x] 65.(d) Garbage Collector and Memory Leaks
+> - [x] 66.(*) WeakMap and WeakSet
+> - [x] 67.Working with Dates
+> - [x] 68.Creating a Countdown Timer on the Website
+> - [x] 69.(*) Handling Past Dates
+> - [x] 70.Document Parameters, Window, and Working with Them
+> - [x] 71.Creating a Modal Window
+> - [x] 72.Modifications to the Modal Window
+> - [x] 73.(d) MutationObserver, ResizeObserver, and contenteditable
+> - [x] 74.Constructor Functions
+> - [x] 75.Call Context. This
+> - [x] 76.Classes (ES6)
+> - [x] 77.Where to Track Information about New Standards
+> - [x] 78.Using Classes in Real Work
+> - [x] 79.Rest Operator and Default Parameters (ES6)
 ### Section 5 - "Advanced JavaScript"
 > - [ ] 80.Local Servers
 > - [ ] 81.JSON Data Format, Deep Object Cloning
@@ -281,3 +281,8 @@ ___
   * Lessons 44-50 have been completed 
 * 05.08.2024
   * Lessons 51,52,58,59 have been completed
+* 06.80.2024
+  * Lessons 60-72 have been completed
+* 07.08.2024
+  * Lessons 73-79 and Test3 have been completed
+  * Section 4 -> Completed :tada:

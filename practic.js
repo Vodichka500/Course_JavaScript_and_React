@@ -10,8 +10,8 @@ function rever (arr){
     return tempArr;
 }
 
-console.log(rever([1,2,3]));
-console.log(addTwoNumbers([2,4,3], [5,6,4]));
+//console.log(rever([1,2,3]));
+//console.log(addTwoNumbers([2,4,3], [5,6,4]));
 
 
 function likes(names) {
@@ -29,8 +29,7 @@ function likes(names) {
     }
 }
 
-console.log(likes(['Alex']));
-
+//console.log(likes(['Alex']));
 
 function findMissingLetter(array)
 {
@@ -43,7 +42,6 @@ function findMissingLetter(array)
     }
     return ' ';
 }
-
 function findPosition(alp, str){
     for(let i = 0; i<52; i++){
         if(str[0] === alp[i]){
@@ -52,9 +50,7 @@ function findPosition(alp, str){
 
     }
 }
-
-console.log(findMissingLetter(['a','b','c','d','f']));
-
+//console.log(findMissingLetter(['a','b','c','d','f']));
 let counter = 0;
 function deepCount(a){
     for(let i = 0; i< a.length; i++){
@@ -67,8 +63,7 @@ function deepCount(a){
     }
     return counter;
 }
-
-deepCount(["1", 5, "3", ["10", 11, [2]]]);
+//deepCount(["1", 5, "3", ["10", 11, [2]]]);
 
 function primeFactors(n){
     let arr = [];
@@ -88,8 +83,7 @@ function primeFactors(n){
         }
     }
 }
-
-primeFactors(7775460);
+//primeFactors(7775460);
 
 
 snail = function(array) {
@@ -142,9 +136,67 @@ snail = function(array) {
     }
     return [].concat(...snailArray);
 }
-
-
 const arr = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
-snail(arr);
-//snail([[1,2,3],[4,5,6],[7,8,9]]);
-console.log();
+//snail(arr);
+
+
+function magicWand(image, origin, threshold) {
+
+    function detect(image, x, y, threshold, arr, color){
+        for(let i = 0; i < 3; i++){
+            for(let j = 0; j < 3; j++){
+
+                const tempX = x-1+i;
+                const tempY = y-1+j;
+
+                if((tempX >= 0 && tempX < image.length) && (tempY >= 0 && tempY < image[0].length)){
+                    if(!arr.some(p => p[0] === tempX && p[1] === tempY)){
+                        const deviation = Math.abs(image[tempX][tempY][0] + image[tempX][tempY][1] + image[tempX][tempY][2] - color);
+                        if (deviation <= threshold) {
+                            arr.push([tempX, tempY, false]);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    function containsFalse(samePixels){
+        return samePixels.some(pixel => pixel[2] === false);
+    }
+
+    function falsePixel(samePixels){
+        return samePixels.find(pixel => pixel[2] === false);
+    }
+
+    const pixel = image[origin.y][origin.x];
+    const pixelColor = pixel[0] + pixel[1] + pixel[2];
+
+    let samePixels = [];
+    samePixels.push([origin.y, origin.x, false]);
+
+    while(containsFalse(samePixels)){
+        const pix = falsePixel(samePixels);
+        pix[2] = true;
+        detect(image, pix[0], pix[1], threshold, samePixels, pixelColor);
+    }
+
+    // Convert the array of arrays to an array of objects
+    return samePixels.map(p => ({x: p[1], y: p[0]}));
+}
+
+
+const image = [
+    [[0, 0, 0], [5, 5, 5], [255, 255, 255], [255, 255, 255], [70, 50, 30], [240, 0, 120]],
+    [[0, 0, 0], [5, 5, 5], [255, 255, 255], [255, 255, 255], [70, 50, 30], [240, 0, 120]],
+    [[0, 0, 0], [5, 5, 5], [255, 255, 255], [255, 255, 255], [70, 50, 30], [240, 0, 120]],
+    [[0, 0, 0], [5, 5, 5], [0,     0,   0], [0,     0,   0], [70, 50, 30], [240, 0, 120]],
+    [[0, 0, 0], [5, 5, 5], [0,    15,   5], [0,    15,   5], [70, 50, 30], [240, 0, 120]],
+    [[0, 0, 0], [4, 2, 0], [255, 255, 255], [255, 255, 255], [0,  15,  5], [240, 0, 120]],
+    [[0, 0, 0], [4, 2, 0], [255, 255, 255], [255, 255, 255], [0,  15,  5], [240, 0, 120]],
+    [[0, 0, 0], [4, 2, 0], [255, 255, 255], [255, 255, 255], [0,  15,  5], [240, 0, 120]]
+]
+const origin = {x:0, y:0};
+const treshold = 0;
+
+console.log(magicWand(image,origin,treshold));
