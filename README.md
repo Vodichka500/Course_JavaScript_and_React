@@ -93,10 +93,10 @@ ___
 > - [ ] 57.(*) Iterable Constructs
 > - [x] 58.(*) Map
 > - [x] 59.(*) Set
-> - [ ] 60.(*) BigInt
+> - [x] 60.(*) BigInt
 
 ### Section 4 - "JavaScript at Work"
-> - [ ] 61.What This Module Will Be About
+> - [x] 61.What This Module Will Be About
 > - [ ] 62.ClassList and Event Delegation
 > - [ ] 63.Creating Tabs in a New Project
 > - [ ] 64.Scripts and Their Execution Time. setTimeout and setInterval
@@ -279,3 +279,5 @@ ___
   * created GitHub repository 
   * created README file 
   * Lessons 44-50 have been completed 
+* 05.08.2024
+  * Lessons 51,52,58,59 have been completed
