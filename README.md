@@ -116,12 +116,12 @@ ___
 > - [x] 78.Using Classes in Real Work
 > - [x] 79.Rest Operator and Default Parameters (ES6)
 ### Section 5 - "Advanced JavaScript"
-> - [ ] 80.Local Servers
-> - [ ] 81.JSON Data Format, Deep Object Cloning
-> - [ ] 82.AJAX and Communication with the Server
-> - [ ] 83.Implementing a Script to Send Data to the Server
-> - [ ] 84.Nice User Notification
-> - [ ] 85.Promise (ES6)
+> - [x] 80.Local Servers
+> - [x] 81.JSON Data Format, Deep Object Cloning
+> - [x] 82.AJAX and Communication with the Server
+> - [x] 83.Implementing a Script to Send Data to the Server
+> - [x] 84.Nice User Notification
+> - [x] 85.Promise (ES6)
 > - [ ] 86.Fetch API
 > - [ ] 87.Array Iteration Methods
 > - [ ] 88.Details on npm and Project. JSON-server
@@ -286,3 +286,5 @@ ___
 * 07.08.2024
   * Lessons 73-79 and Test3 have been completed
   * Section 4 -> Completed :tada:
+* 07.08.2024
+  * Lessons 80-85 and have been completed

@@ -199,4 +199,147 @@ const image = [
 const origin = {x:0, y:0};
 const treshold = 0;
 
-console.log(magicWand(image,origin,treshold));
+//console.log(magicWand(image,origin,treshold));
+
+var Sudoku = function(data)
+{
+    //   Private methods
+
+
+
+    //   Public methods
+    return {
+
+        isValid: function() {
+
+            for(let i = 0; i<data.length; i++ ){
+                if(data.length !== data[i].length){
+                    console.log('length error');
+                    return false;
+                }
+            }
+
+            for(let rows = 0; rows<data.length; rows++){
+                for(let i = 0; i<data[rows].length; i++){
+                    for(let j = 0; j<data[rows].length; j++){
+                        if((data[rows][i] === data[rows][j]) && (i !== j)){
+                            console.log('error in row');
+                            return false;
+                        }
+                    }
+                }
+            }
+            for(let cols = 0; cols<data.length; cols++){
+                for(let i = 0; i<data[cols].length; i++){
+                    for(let j = 0; j<data[cols].length; j++){
+                        if((data[i][cols] === data[j][cols]) && (i !== j)){
+                            console.log('error in col');
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            let str = '';
+            let set = new Set();
+            for(let rows = 0; rows<data.length; rows+= Math.sqrt(data.length)){
+                for(let cols = 0; cols<data.length; cols+= Math.sqrt(data.length)){
+
+                    set.clear();
+                    // start every square elements
+                    for(let i = 0+rows; i < Math.sqrt(data.length)+rows; i++) {
+                        for(let j = 0+cols; j < Math.sqrt(data.length)+cols; j++){
+
+                            set.add(data[i][j]);
+                        }
+
+                    }
+                    if(set.size !== data.length){
+                        console.log(set);
+                        console.log(`error in square; column: ${cols}, row: ${rows}`);
+                        return false;
+                    }
+
+                    //end every square elements
+
+                }
+            }
+            console.log(data);
+            return true;
+        }
+    };
+
+
+};
+
+var goodSudoku1 = new Sudoku([
+    [7,8,4, 1,5,9, 3,2,6],
+    [5,3,9, 6,7,2, 8,4,1],
+    [6,1,2, 4,3,8, 7,5,9],
+
+    [9,2,8, 7,1,5, 4,6,3],
+    [3,5,7, 8,4,6, 1,9,2],
+    [4,6,1, 9,2,3, 5,8,7],
+
+    [8,7,6, 3,9,4, 2,1,5],
+    [2,4,3, 5,6,1, 9,7,8],
+    [1,9,5, 2,8,7, 6,3,4]
+]);
+
+var goodSudoku2 = new Sudoku([
+    [1,4, 2,3],
+    [3,2, 4,1],
+
+    [4,1, 3,2],
+    [2,3, 1,4]
+]);
+
+var badSudoku1 = new Sudoku([
+    [1,2,3, 4,5,6, 7,8,9],
+    [1,2,3, 4,5,6, 7,8,9],
+    [1,2,3, 4,5,6, 7,8,9],
+
+    [1,2,3, 4,5,6, 7,8,9],
+    [1,2,3, 4,5,6, 7,8,9],
+    [1,2,3, 4,5,6, 7,8,9],
+
+    [1,2,3, 4,5,6, 7,8,9],
+    [1,2,3, 4,5,6, 7,8,9],
+    [1,2,3, 4,5,6, 7,8,9]
+]);
+
+var badSudoku2 = new Sudoku([
+    [1,2,3,4,5],
+    [1,2,3,4],
+    [1,2,3,4],
+    [1]
+]);
+var badSudoku3 = new Sudoku([[true]]);
+
+
+//console.log(goodSudoku1.isValid());
+//console.log(goodSudoku2.isValid());
+//console.log(badSudoku1.isValid());
+//console.log(badSudoku2.isValid());
+//console.log(badSudoku3.isValid());
+
+const req = new Promise( function (resolve, reject){
+    setTimeout( () => {
+        console.log("Data preparation");
+
+        const product = {
+            name: 'TV',
+            price: 2000,
+        };
+
+        resolve(product);
+    },2000 )
+});
+
+req.then((product) => {
+    setTimeout(() => {
+        console.log("Data status: Ok");
+    }, 2000);
+});
+
+req.catch();
