@@ -286,5 +286,11 @@ ___
 * 07.08.2024
   * Lessons 73-79 and Test3 have been completed
   * Section 4 -> Completed :tada:
-* 07.08.2024
+* 11.08.2024
   * Lessons 80-85 and have been completed
+* 12.08.2024 
+  * Lessons 85-87 and have been completed
+  * Code writing exercise 20 & 21 have been completed
+* 14.08.2024 - 15.08.2024
+  * Lessons 88-97 and have been completed
+  * TEST 4 was passed successfully

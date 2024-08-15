@@ -323,7 +323,7 @@ var badSudoku3 = new Sudoku([[true]]);
 //console.log(badSudoku2.isValid());
 //console.log(badSudoku3.isValid());
 
-const req = new Promise( function (resolve, reject){
+new Promise( function (resolve, reject){
     setTimeout( () => {
         console.log("Data preparation");
 
@@ -331,15 +331,107 @@ const req = new Promise( function (resolve, reject){
             name: 'TV',
             price: 2000,
         };
+        const rand = Math.floor(Math.random()*100);
+        console.log(rand);
+        if(rand % 2 === 0){
+            resolve();
+        } else {
+            reject();
+        }
 
-        resolve(product);
     },2000 )
-});
-
-req.then((product) => {
+}).then(() => {
     setTimeout(() => {
         console.log("Data status: Ok");
     }, 2000);
+}).catch(() => {
+    setTimeout(() => {
+        console.log("Data status: error");
+    }, 2000);
 });
 
-req.catch();
+const names = ['Vlad', 'Yana', 'Pablo', 'Svetlana'];
+const shortNames = names.filter((name) => {
+    return name.length < 5;
+})
+//console.log(shortNames);
+
+const films = [
+    {
+        name: 'Titanic',
+        rating: 9
+    },
+    {
+        name: 'Die hard 5',
+        rating: 5
+    },
+    {
+        name: 'Matrix',
+        rating: 8
+    },
+    {
+        name: 'Some bad film',
+        rating: 4
+    }
+];
+
+function showGoodFilms(arr) {
+    arr = arr.filter(item => {
+        if(Object.entries(item)[1][1] >= 8){
+            return item;
+        }
+    })
+    console.log(arr);
+    return arr;
+}
+
+function showListOfFilms(arr) {
+    arr = showGoodFilms(arr).map(item => Object.entries(item)).map(item => item[0][1]).join(',');
+    console.log(arr);
+}
+
+function setFilmsIds(arr) {
+    arr.forEach((item, i) => {
+        item['id']=i;
+    })
+    return arr;
+}
+
+//const tranformedArray = setFilmsIds(films);
+
+function checkFilms(arr) {
+    return arr.every(item => item.id || item.id === 0);
+}
+
+
+//showGoodFilms(films);
+//showListOfFilms(films);
+//console.log(checkFilms(films));
+
+
+const funds = [
+    {amount: -1400},
+    {amount: 2400},
+    {amount: -1000},
+    {amount: 500},
+    {amount: 10400},
+    {amount: -11400}
+];
+
+const getPositiveIncomeAmount = (data) => {
+    data = data.map(item => Object.entries(item)).filter(item => item[0][1] > 0).map(item => item[0][1]).reduce((sum, item) => sum + item);
+    console.log(data);
+    return data;
+};
+
+const getTotalIncomeAmount = (data) => {
+    if(data.map(item => Object.entries(item)).map(item => item[0][1]).some(item => item<0)){
+        data = data.map(item => Object.entries(item)).map(item => item[0][1]).reduce((sum, item) => sum + item);
+        return data;
+    } else {
+        return  getTotalIncomeAmount(data);
+    }
+};
+
+getPositiveIncomeAmount(funds);
+getTotalIncomeAmount(funds);

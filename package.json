@@ -1,0 +1,14 @@
+{
+  "name": "js_react_course",
+  "version": "1.0.0",
+  "description": "___\r ## Description\r > JavaScript fundamentals and advanced concepts, including Object-Oriented Programming, AJAX, JSON, and essential tools\r > like Git, npm, Babel, and Webpack. The course also includes in-depth training on React, Redux, and various architectural\r > approaches, culminating in hands-on projects to solidify your skills.\r ## Info\r * **Status:** *In progress*\r * **Lessons:** *223*\r * **Time:** *66,5 hours*\r * **Link:** *<u>[link](https://www.udemy.com/course/javascript_full/learn/lecture/30884698#overview)</u>*",
+  "main": "practic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}
