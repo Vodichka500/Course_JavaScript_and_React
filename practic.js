@@ -433,5 +433,39 @@ const getTotalIncomeAmount = (data) => {
     }
 };
 
-getPositiveIncomeAmount(funds);
-getTotalIncomeAmount(funds);
+//getPositiveIncomeAmount(funds);
+//getTotalIncomeAmount(funds);
+
+
+class Student{
+    constructor(name, surname, age) {
+        this._name = name;
+        this._surname = surname;
+        this._age = age;
+    }
+    #id = '99792';
+
+    displayInfo(){
+        console.log(`Student: id:${this.#id} ${this._name} ${this._surname}, ${this._age} years old.`);
+    }
+
+    get name(){
+        return this._name;
+    }
+    set name(name){
+        this._name = name;
+    }
+
+    get id(){
+        return this.#id;
+    }
+    set id(newID){
+        this.#id = newID;
+        console.log('ID has been update');
+    }
+}
+
+let uladzislau = new Student('Uladzislau', 'Kamisarau', '20');
+uladzislau.displayInfo();
+
+console.log(uladzislau.id);

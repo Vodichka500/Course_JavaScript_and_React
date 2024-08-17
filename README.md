@@ -122,43 +122,43 @@ ___
 > - [x] 83.Implementing a Script to Send Data to the Server
 > - [x] 84.Nice User Notification
 > - [x] 85.Promise (ES6)
-> - [ ] 86.Fetch API
-> - [ ] 87.Array Iteration Methods
-> - [ ] 88.Details on npm and Project. JSON-server
-> - [ ] 89.Fetching Data from the Server. Async/Await (ES8)
-> - [ ] 90.Additional: What Libraries Are. Axios Library
-> - [ ] 91.Creating a Slider on the Website, Option 1
-> - [ ] 92.Creating a Slider on the Website, Option 2
-> - [ ] 93.Creating Navigation for Slides
-> - [ ] 94.How to Save Data Without a DB. Working with localStorage
-> - [ ] 95.Regular Expressions
-> - [ ] 96.Creating a Calculator on the Website, Part 1
-> - [ ] 97.Creating a Calculator on the Website, Part 2
-> - [ ] 98.Getters and Setters (Object Properties)
-> - [ ] 99.Encapsulation
-> - [ ] 100.Module Pattern, How and Why to Use It
-> - [ ] 101.Webpack. Building Our Project
-> - [ ] 102.ES6 Modules
-> - [ ] 103.Building Our Project and Fixing Bugs
-> - [ ] 104.Creating a Portfolio on GitHub
-> - [ ] 105.Errors. How to Avoid “Breaking” Your Code
-> - [ ] 106.(d) Creating Your Own Errors
-> - [ ] 107.Transpiling ES6+ Code to Older ES5 Format. Babel, Core.js, and Polyfills
-> - [ ] 108.Modern Libraries and Frameworks
-> - [ ] 109.Jquery Library
-> - [ ] 110.Generator Functions
-> - [ ] 111.JS Animations, requestAnimationFrame
-> - [ ] 112.(*) Web Animations API
-> - [ ] 113.Event Loop, Detailed Work of Asynchronous and Synchronous Operations
-> - [ ] 114.Macro and Microtasks
-> - [ ] 115.Working with Existing Code
-> - [ ] 116.What Projects Can You Think of and Implement on Your Own
+> - [x] 86.Fetch API
+> - [x] 87.Array Iteration Methods
+> - [x] 88.Details on npm and Project. JSON-server
+> - [x] 89.Fetching Data from the Server. Async/Await (ES8)
+> - [x] 90.Additional: What Libraries Are. Axios Library
+> - [x] 91.Creating a Slider on the Website, Option 1
+> - [x] 92.Creating a Slider on the Website, Option 2
+> - [x] 93.Creating Navigation for Slides
+> - [x] 94.How to Save Data Without a DB. Working with localStorage
+> - [x] 95.Regular Expressions
+> - [x] 96.Creating a Calculator on the Website, Part 1
+> - [x] 97.Creating a Calculator on the Website, Part 2
+> - [x] 98.Getters and Setters (Object Properties)
+> - [x] 99.Encapsulation
+> - [x] 100.Module Pattern, How and Why to Use It
+> - [x] 101.Webpack. Building Our Project
+> - [x] 102.ES6 Modules
+> - [x] 103.Building Our Project and Fixing Bugs
+> - [x] 104.Creating a Portfolio on GitHub
+> - [x] 105.Errors. How to Avoid “Breaking” Your Code
+> - [x] 106.(d) Creating Your Own Errors
+> - [x] 107.Transpiling ES6+ Code to Older ES5 Format. Babel, Core.js, and Polyfills
+> - [x] 108.Modern Libraries and Frameworks
+> - [x] 109.Jquery Library
+> - [x] 110.Generator Functions
+> - [x] 111.JS Animations, requestAnimationFrame
+> - [x] 112.(*) Web Animations API
+> - [x] 113.Event Loop, Detailed Work of Asynchronous and Synchronous Operations
+> - [x] 114.Macro and Microtasks
+> - [x] 115.Working with Existing Code
+> - [x] 116.What Projects Can You Think of and Implement on Your Own
 ### Section 6 - "React Library. A basic level"
-> - [ ] 117.Introduction
-> - [ ] 118.What is React, Why It Matters, and Why Not Plain JS
-> - [ ] 119.Fundamental Principles of React
-> - [ ] 120.Create React App - Building Your Application
-> - [ ] 121.Working with JSX Preprocessor, Its Limitations
+> - [x] 117.Introduction
+> - [x] 118.What is React, Why It Matters, and Why Not Plain JS
+> - [x] 119.Fundamental Principles of React
+> - [x] 120.Create React App - Building Your Application
+> - [x] 121.Working with JSX Preprocessor, Its Limitations
 > - [ ] 122.Elements and Components
 > - [ ] 123.Strict Mode
 > - [ ] 124.Strict Mode and React 18+
@@ -292,5 +292,11 @@ ___
   * Lessons 85-87 and have been completed
   * Code writing exercise 20 & 21 have been completed
 * 14.08.2024 - 15.08.2024
-  * Lessons 88-97 and have been completed
+  * Lessons 88-97 have been completed
   * TEST 4 was passed successfully
+* 16.08.2024 - 17.08.2024
+  * Lessons 98-116 have been completed
+  * TEST 1 was passed successfully
+  * Section 5 -> Completed :tada:
+  * Section 6 has been started
+  * Lessons 117-121 have been completed
