@@ -159,32 +159,32 @@ ___
 > - [x] 119.Fundamental Principles of React
 > - [x] 120.Create React App - Building Your Application
 > - [x] 121.Working with JSX Preprocessor, Its Limitations
-> - [ ] 122.Elements and Components
-> - [ ] 123.Strict Mode
-> - [ ] 124.Strict Mode and React 18+
-> - [ ] 125.Creating a New Project
-> - [ ] 126.Component Properties
-> - [ ] 127.Practice Properties on the Project
-> - [ ] 128.Working with Lists and Reconciliation Algorithm
-> - [ ] 129.Component States
-> - [ ] 130.Independent Task on Working with States
-> - [ ] 131.Events in React and Revisiting This
-> - [ ] 132.Practice States on the Project
-> - [ ] 133.Working with Forms, Controlled and Uncontrolled Components
-> - [ ] 134.Immutability of State and Custom Events
-> - [ ] 135.Practice. Lifting State Up
-> - [ ] 136.React Fragments
-> - [ ] 137.Practice. Implementing Search and Filters
-> - [ ] 138.Semantics and Accessibility of Content
-> - [ ] 139.Styles in React. Inline Styles
+> - [x] 122.Elements and Components
+> - [x] 123.Strict Mode
+> - [x] 124.Strict Mode and React 18+
+> - [x] 125.Creating a New Project
+> - [x] 126.Component Properties
+> - [x] 127.Practice Properties on the Project
+> - [x] 128.Working with Lists and Reconciliation Algorithm
+> - [x] 129.Component States
+> - [x] 130.Independent Task on Working with States
+> - [x] 131.Events in React and Revisiting This
+> - [x] 132.Practice States on the Project
+> - [x] 133.Working with Forms, Controlled and Uncontrolled Components
+> - [x] 134.Immutability of State and Custom Events
+> - [x] 135.Practice. Lifting State Up
+> - [x] 136.React Fragments
+> - [x] 137.Practice. Implementing Search and Filters
+> - [x] 138.Semantics and Accessibility of Content
+> - [x] 139.Styles in React. Inline Styles
 > - [ ] 140.Styles in React. CSS and SASS/SCSS
-> - [ ] 141.Styles in React. Dynamic Classes and Styles
-> - [ ] 142.Styles in React. Styled Components
-> - [ ] 143.Styles in React. Ready-made Component Libraries with Styles
-> - [ ] 144.Class Fields and static
-> - [ ] 145.Module Conclusion
+> - [x] 141.Styles in React. Dynamic Classes and Styles
+> - [x] 142.Styles in React. Styled Components
+> - [x] 143.Styles in React. Ready-made Component Libraries with Styles
+> - [x] 144.Class Fields and static
+> - [x] 145.Module Conclusion
 ### Section 7 - "React Library. Average fundamental level"
-> - [ ] 146.What is API and How Real Applications Work
+> - [x] 146.What is API and How Real Applications Work
 > - [ ] 147.New Project and Working with the Server
 > - [ ] 148.Data Transformation and Component with Random Character
 > - [ ] 149.Good Application Practice (Spinner, Errors...)
@@ -296,7 +296,12 @@ ___
   * TEST 4 was passed successfully
 * 16.08.2024 - 17.08.2024
   * Lessons 98-116 have been completed
-  * TEST 1 was passed successfully
+  * PRACTICAL TEST 1 was passed successfully
   * Section 5 -> Completed :tada:
   * Section 6 has been started
   * Lessons 117-121 have been completed
+* 18.08.2024 - 22.08.2024
+  * Lessons 122-145 have been completed
+  * Section 6 -> Completed :tada:
+  * Section 7 has been started
+  * TEST 5 was passed successfully

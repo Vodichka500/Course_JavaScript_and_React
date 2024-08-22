@@ -214,7 +214,7 @@ var Sudoku = function(data)
 
             for(let i = 0; i<data.length; i++ ){
                 if(data.length !== data[i].length){
-                    console.log('length error');
+                    console.log('length errorMessage');
                     return false;
                 }
             }
@@ -223,7 +223,7 @@ var Sudoku = function(data)
                 for(let i = 0; i<data[rows].length; i++){
                     for(let j = 0; j<data[rows].length; j++){
                         if((data[rows][i] === data[rows][j]) && (i !== j)){
-                            console.log('error in row');
+                            console.log('errorMessage in row');
                             return false;
                         }
                     }
@@ -233,7 +233,7 @@ var Sudoku = function(data)
                 for(let i = 0; i<data[cols].length; i++){
                     for(let j = 0; j<data[cols].length; j++){
                         if((data[i][cols] === data[j][cols]) && (i !== j)){
-                            console.log('error in col');
+                            console.log('errorMessage in col');
                             return false;
                         }
                     }
@@ -346,7 +346,7 @@ new Promise( function (resolve, reject){
     }, 2000);
 }).catch(() => {
     setTimeout(() => {
-        console.log("Data status: error");
+        console.log("Data status: errorMessage");
     }, 2000);
 });
 
