@@ -214,7 +214,7 @@ ___
 > - [ ] 170.React Native Overview
 > - [ ] 171.Project Review and Wrap-Up
 > - [ ] 172.Reflecting on What You’ve Learned
-> - [ ] 173.Continued Learning Paths and Resources
+> - [x] 173.Continued Learning Paths and Resources
 > - [ ] 174.Final Q&A
 > - [ ] 175.Dynamic Imports and React.lazy
 > - [ ] 176.React.memo, Pure Component, and Application Speed Optimization
@@ -305,3 +305,8 @@ ___
   * Section 6 -> Completed :tada:
   * Section 7 has been started
   * TEST 5 was passed successfully
+* 01.09.2024 - 05.09.2024
+  * Lessons 146 - 160 have been completed
+  * TEST 5 was passed successfully
+  * Section 7 -> Completed :tada:
+  * Lessons 160 - 173 have been completed
