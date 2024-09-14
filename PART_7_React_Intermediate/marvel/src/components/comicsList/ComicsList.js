@@ -5,6 +5,7 @@ import useMarvelService from "../../services/MarvelService";
 import './comicsList.scss';
 import Spinner from "../spinner/Spinner";
 import ErrorMessage from "../errorMessage/ErrorMessage";
+import {Link} from "react-router-dom";
 
 
 
@@ -16,16 +17,12 @@ const ComicsList = () => {
 
     const {loading, error, getAllComics} = useMarvelService()
 
-
-    // {id: 101, title: "Xmen", price: '0,99$', image: "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc63a47b8dcb.jpg"},
-    // {id: 101, title: "Xmen", price: '0,99$', image: "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc63a47b8dcb.jpg"},
-    // {id: 101, title: "Xmen", price: '0,99$', image: "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc63a47b8dcb.jpg"}
-
     useEffect(() => {
         setOffset(offset => offset+8)
         getAllComics()
             .then(setComics)
     }, []);
+
 
     const getNewComics = () => {
         setIsFirstComics(false)
@@ -49,11 +46,11 @@ const ComicsList = () => {
         const items = comics.map((item, i) => {
             return (
                 <li className="comics__item" key={i}>
-                    <a href="#">
+                    <Link to={'/comics/'+item.id}>
                         <img src={item.image} alt={item.title} className="comics__item-img"/>
                         <div className="comics__item-name">{item.title}</div>
                         <div className="comics__item-price">{item.price>0 ? item.price+"$" : "NOT AVAILABLE"}</div>
-                    </a>
+                    </Link>
                 </li>
             )
         })
