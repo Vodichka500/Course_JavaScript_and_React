@@ -9,10 +9,28 @@ import Skeleton from "../skeleton/Skeleton";
 
 import './charInfo.scss';
 
+const setContent = (process, char) => {
+    switch (process) {
+        case 'waiting':
+            return <Skeleton/>
+            break;
+        case 'loading':
+            return <Spinner/>
+            break;
+        case 'confirmed':
+            return <View character={char}/>
+            break;
+        case 'error':
+            return <ErrorMessage/>
+            break;
+        default:
+            throw new Error("Unknown error");
+    }
+}
+
 const CharInfo = (props) =>  {
     const [char, setChar] = useState(null)
-
-    const {loading,error,getCharacter} = useMarvelService()
+    const {process, setProcess,getCharacter} = useMarvelService()
 
     useEffect(() => {
         getCharacterInfo();
@@ -26,6 +44,7 @@ const CharInfo = (props) =>  {
         }
         getCharacter(id)
             .then(onCharacterLoaded)
+            .then(() => setProcess("confirmed"))
     }
 
     const onCharacterLoaded = (character) => {
@@ -37,21 +56,9 @@ const CharInfo = (props) =>  {
     }, [props.id]);
 
 
-    const skeletonItem = (!loading  && !error && !char) ? <Skeleton/> : null
-    const loadingItem = loading ? <Spinner/> : null;
-    const errorItem = error ? <ErrorMessage/> : null;
-
-    const infoItem = !( loading || error || !char) ? <View character={char}/> : null;
-
-
     return (
         <div className="char__info">
-
-            {skeletonItem}
-            {loadingItem}
-            {errorItem}
-            {infoItem}
-
+            {setContent(process, char)}
         </div>
     )
 

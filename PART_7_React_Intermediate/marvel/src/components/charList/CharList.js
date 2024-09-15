@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState, useEffect, useRef, useMemo} from "react";
 import PropTypes from "prop-types";
 
 import useMarvelService from "../../services/MarvelService";
@@ -7,6 +7,24 @@ import ErrorMessage from "../errorMessage/ErrorMessage";
 
 import './charList.scss';
 
+const setContent = (process,Component, newItemLoading) => {
+    switch (process) {
+        case 'waiting':
+            return <Spinner/>
+            break;
+        case 'loading':
+            return !    newItemLoading ? <Spinner/> : <Component/>
+            break;
+        case 'confirmed':
+            return <Component/>
+            break;
+        case 'error':
+            return <ErrorMessage/>
+            break;
+        default:
+            throw new Error("Unknown error");
+    }
+}
 
 const CharList = (props) => {
 
@@ -15,7 +33,7 @@ const CharList = (props) => {
     const [newItemLoading , setNewItemLoading] = useState(false)
     const [ lastItem, setLastItem] = useState(false)
 
-    const {loading, error, getAllCharacters} = useMarvelService();
+    const {process,setProcess, getAllCharacters} = useMarvelService();
 
     useEffect(() => {
         getNewChar(offset, true)
@@ -27,6 +45,7 @@ const CharList = (props) => {
 
         getAllCharacters(offset)
             .then(onLoaded)
+            .then(()=>setProcess('confirmed'))
     }
 
     const onLoaded = (newCharacters) => {
@@ -59,7 +78,7 @@ const CharList = (props) => {
                 styleElem = {'objectFit': 'fill'}
             }
             return (
-                <li key={item.id}
+                <li key={i}
                     ref={addRef}
                     className="char__item"
                     onClick={() => {
@@ -71,26 +90,21 @@ const CharList = (props) => {
                 </li>
             )
         })
+
         return (
             <ul className="char__grid">
                 {charachtersItems}
             </ul>
         )
     }
-
-    const items = renderCharItems(characters)
-
-    const loadingItem = loading && !newItemLoading ?  <Spinner/> : null;
-    const errorItem = error ? <ErrorMessage/> : null;
+    const elements = useMemo(() => setContent(process, ()=>(renderCharItems(characters)), newItemLoading), [process])
 
     return (
         <div className="char__list">
-            {loadingItem}
-            {errorItem}
-            {items}
+            {elements}
             <button
                 className="button button__main button__long"
-                style={{'display': lastItem ? 'none' : 'block' , 'disabled' : loading, 'filter' : loading ? 'grayscale(0.5)' : 'none' }}
+                style={{'display': lastItem ? 'none' : 'block' , 'disabled' : process==='loading', 'filter' : process==='loading' ? 'grayscale(0.5)' : 'none' }}
                 onClick={() => getNewChar(offset)}>
                 <div className="inner">load more</div>
             </button>

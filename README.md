@@ -185,50 +185,50 @@ ___
 > - [x] 145.Module Conclusion
 ### Section 7 - "React Library. Average fundamental level"
 > - [x] 146.What is API and How Real Applications Work
-> - [ ] 147.New Project and Working with the Server
-> - [ ] 148.Data Transformation and Component with Random Character
-> - [ ] 149.Good Application Practice (Spinner, Errors...)
-> - [ ] 150.Component Lifecycle
-> - [ ] 151.Practice with Lifecycle, componentDidUpdate
-> - [ ] 152.Error Boundaries
-> - [ ] 153.Memoization (useMemo, useCallback)
-> - [ ] 154.React Hooks
-> - [ ] 155.Practice with Hooks (useState, useEffect, etc.)
-> - [ ] 156.Handling and Fetching Data, Using useEffect
-> - [ ] 157.Using useReducer for State Management
-> - [ ] 158.Introduction to Routing and React Router
-> - [ ] 159.Navigation in React
-> - [ ] 160.Routing in React
-> - [ ] 161.Custom Hooks and Their Benefits
+> - [x] 147.New Project and Working with the Server
+> - [x] 148.Data Transformation and Component with Random Character
+> - [x] 149.Good Application Practice (Spinner, Errors...)
+> - [x] 150.Component Lifecycle
+> - [x] 151.Practice with Lifecycle, componentDidUpdate
+> - [x] 152.Error Boundaries
+> - [x] 153.Memoization (useMemo, useCallback)
+> - [x] 154.React Hooks
+> - [x] 155.Practice with Hooks (useState, useEffect, etc.)
+> - [x] 156.Handling and Fetching Data, Using useEffect
+> - [x] 157.Using useReducer for State Management
+> - [x] 158.Introduction to Routing and React Router
+> - [x] 159.Navigation in React
+> - [x] 160.Routing in React
+> - [x] 161.Custom Hooks and Their Benefits
 
 ### Section 8 - "React Library. Hooks and Intermediate Advanced" 
 
-> - [ ] 162.Practice Custom Hooks
-> - [ ] 163.State Management with Context API
-> - [ ] 164.Practice Context API
-> - [ ] 165.Ascending Levels of State Management: Redux
-> - [ ] 166.Practice Redux
-> - [ ] 167.React Performance Optimization
-> - [ ] 168.React Suspense and Code Splitting
-> - [ ] 169.React Server-Side Rendering
-> - [ ] 170.React Native Overview
-> - [ ] 171.Project Review and Wrap-Up
-> - [ ] 172.Reflecting on What You’ve Learned
+> - [x] 162.Practice Custom Hooks
+> - [x] 163.State Management with Context API
+> - [x] 164.Practice Context API
+> - [x] 165.Ascending Levels of State Management: Redux
+> - [x] 166.Practice Redux
+> - [x] 167.React Performance Optimization
+> - [x] 168.React Suspense and Code Splitting
+> - [x] 169.React Server-Side Rendering
+> - [x] 170.React Native Overview
+> - [x] 171.Project Review and Wrap-Up
+> - [x] 172.Reflecting on What You’ve Learned
 > - [x] 173.Continued Learning Paths and Resources
-> - [ ] 174.Final Q&A
-> - [ ] 175.Dynamic Imports and React.lazy
-> - [ ] 176.React.memo, Pure Component, and Application Speed Optimization
-> - [ ] 177.React Context and useContext
+> - [x] 174.Final Q&A
+> - [x] 175.Dynamic Imports and React.lazy
+> - [x] 176.React.memo, Pure Component, and Application Speed Optimization
+> - [x] 177.React Context and useContext
 > - [ ] 178.useReducer
-> - [ ] 179.Higher-Order Components (HOC)
-> - [ ] 180.React Libraries and Ecosystem
-> - [ ] 181.React Transition Group
-> - [ ] 182.Formik, Yup, and Working with Forms of Any Complexity, Part 1
-> - [ ] 183.Formik, Yup, and Working with Forms of Any Complexity, Part 2
-> - [ ] 184.Homework Review
-> - [ ] 185.SEO Optimization for Web Applications, React-helmet
-> - [ ] 186.Finite-State Machines (FSM) and Advanced State Management Approaches
-> - [ ] 187.Analyzing Errors in Third-Party Libraries and Focus Issues
+> - [x] 179.Higher-Order Components (HOC)
+> - [x] 180.React Libraries and Ecosystem
+> - [x] 181.React Transition Group
+> - [x] 182.Formik, Yup, and Working with Forms of Any Complexity, Part 1
+> - [x] 183.Formik, Yup, and Working with Forms of Any Complexity, Part 2
+> - [x] 184.Homework Review
+> - [x] 185.SEO Optimization for Web Applications, React-helmet
+> - [x] 186.Finite-State Machines (FSM) and Advanced State Management Approaches
+> - [x] 187.Analyzing Errors in Third-Party Libraries and Focus Issues
 
 ### Section 9 - "React + Redux"
 > - [ ] 188.Introduction to Redux Principles
@@ -310,3 +310,7 @@ ___
   * TEST 5 was passed successfully
   * Section 7 -> Completed :tada:
   * Lessons 160 - 173 have been completed
+* 06.09.2024 - 15.09.2024
+  * Lessons 174-187 have been completed
+  * PRACTICAL TEST 2 was passed successfully
+  * Section 8 -> Completed :tada:

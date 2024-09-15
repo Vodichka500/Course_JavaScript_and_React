@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import useMarvelService from "../../services/MarvelService";
 
@@ -9,18 +9,38 @@ import {Link} from "react-router-dom";
 
 
 
+const setContent = (process,Component, isFirstComics) => {
+    switch (process) {
+        case 'waiting':
+            return <Spinner/>
+            break;
+        case 'loading':
+            return isFirstComics ? <Spinner/> : <Component/>
+            break;
+        case 'confirmed':
+            return <Component/>
+            break;
+        case 'error':
+            return <ErrorMessage/>
+            break;
+        default:
+            throw new Error("Unknown error");
+    }
+}
+
 const ComicsList = () => {
     const [comics, setComics] = useState([])
     const [offset, setOffset] = useState(0)
     const [isFirstComics, setIsFirstComics] = useState(true)
     const [isLast, setIsLast] = useState(false)
 
-    const {loading, error, getAllComics} = useMarvelService()
+    const {process, setProcess, getAllComics} = useMarvelService()
 
     useEffect(() => {
         setOffset(offset => offset+8)
         getAllComics()
             .then(setComics)
+            .then(()=>setProcess('confirmed'))
     }, []);
 
 
@@ -61,22 +81,17 @@ const ComicsList = () => {
         )
     }
 
-    const items = renderComicsItems()
-    const spinner = (loading && isFirstComics) ? <Spinner/>:null
-    const errorMessage = error ? <ErrorMessage/>:null
 
     return (
 
 
         <div className="comics__list">
-            {spinner}
-            {errorMessage}
-            {items}
+            {setContent(process, ()=>(renderComicsItems()),isFirstComics)}
             <button className="button button__main button__long"
                     style={{
                         'display': isLast ? "none" : "block",
-                        'disable' : loading,
-                        'filter' : loading ? "grayscale(0.5)": ''
+                        'disable' : process ==="loading",
+                        'filter' : process ==="loading" ? "grayscale(0.5)": ''
                     }}
                     onClick={getNewComics}>
                 <div className="inner">load more</div>
