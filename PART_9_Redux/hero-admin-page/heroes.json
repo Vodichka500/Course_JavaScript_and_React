@@ -1,0 +1,49 @@
+{
+  "heroes": [
+    {
+      "id": "5a4d219f-f569-469a-8a71-c56bcee278d3",
+      "name": "Vlad",
+      "description": "Krasavcheg",
+      "element": "water"
+    },
+    {
+      "id": "fe9f4852-aa6c-4f89-a228-16e6de414047",
+      "name": "yanaasas",
+      "description": "sasas",
+      "element": "fire"
+    },
+    {
+      "id": "6f3fb4d4-cd92-4e79-ac7a-5f1059430b1e",
+      "name": "yanaasas",
+      "description": "sasas",
+      "element": "wind"
+    }
+  ],
+  "filters": [
+    {
+      "type": "all",
+      "filterName": "Все",
+      "filterClassName": "btn-outline-dark "
+    },
+    {
+      "type": "fire",
+      "filterName": "Огонь",
+      "filterClassName": "btn-danger"
+    },
+    {
+      "type": "water",
+      "filterName": "Вода",
+      "filterClassName": "btn-primary"
+    },
+    {
+      "type": "wind",
+      "filterName": "Ветер",
+      "filterClassName": "btn-success"
+    },
+    {
+      "type": "earth",
+      "filterName": "Земля",
+      "filterClassName": "btn-secondary"
+    }
+  ]
+}

@@ -21,6 +21,8 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "core-js": "^3.38.0"
+    "core-js": "^3.38.0",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1"
   }
 }

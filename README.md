@@ -231,25 +231,25 @@ ___
 > - [x] 187.Analyzing Errors in Third-Party Libraries and Focus Issues
 
 ### Section 9 - "React + Redux"
-> - [ ] 188.Introduction to Redux Principles
-> - [ ] 189.Redux Principles in Practice
-> - [ ] 190.Pure Functions
-> - [ ] 191.Optimization through actionCreators and bindActionCreator
-> - [ ] 192.Adding React to a Project
-> - [ ] 193.Connecting React and Redux via connect
-> - [ ] 194.Connecting React and Redux via Hooks
-> - [ ] 195.Redux DevTools
-> - [ ] 196.Naming Rules for Actions and Mini-Exam
-> - [ ] 197.Addressing the Most Complex Moments
-> - [ ] 198.Combining Reducers and Using createSelector() for Beautiful Selectors
-> - [ ] 199.Complexity in Real-World Development
-> - [ ] 200.Store Enhancers
-> - [ ] 201.Middleware
-> - [ ] 202.Redux-Thunk
-> - [ ] 203.Redux Toolkit: configureStore()
-> - [ ] 204.Redux Toolkit: createAction()
-> - [ ] 205.Redux Toolkit: createReducer()
-> - [ ] 206.Redux Toolkit: createSlice()
+> - [x] 188.Introduction to Redux Principles
+> - [x] 189.Redux Principles in Practice
+> - [x] 190.Pure Functions
+> - [x] 191.Optimization through actionCreators and bindActionCreator
+> - [x] 192.Adding React to a Project
+> - [x] 193.Connecting React and Redux via connect
+> - [x] 194.Connecting React and Redux via Hooks
+> - [x] 195.Redux DevTools
+> - [x] 196.Naming Rules for Actions and Mini-Exam
+> - [x] 197.Addressing the Most Complex Moments
+> - [x] 198.Combining Reducers and Using createSelector() for Beautiful Selectors
+> - [x] 199.Complexity in Real-World Development
+> - [x] 200.Store Enhancers
+> - [x] 201.Middleware
+> - [x] 202.Redux-Thunk
+> - [x] 203.Redux Toolkit: configureStore()
+> - [x] 204.Redux Toolkit: createAction()
+> - [x] 205.Redux Toolkit: createReducer()
+> - [x] 206.Redux Toolkit: createSlice()
 > - [ ] 207.Redux Toolkit: createAsyncThunk()
 > - [ ] 208.Redux Toolkit: createEntityAdapter()
 > - [ ] 209.Pitfalls in Homework Assignments
@@ -314,3 +314,6 @@ ___
   * Lessons 174-187 have been completed
   * PRACTICAL TEST 2 was passed successfully
   * Section 8 -> Completed :tada:
+* 15.10.2024 - 01.11.2024
+  * Lessons 188 - 206 have been completed
+  
