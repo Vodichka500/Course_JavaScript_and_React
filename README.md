@@ -5,7 +5,7 @@ ___
 > like Git, npm, Babel, and Webpack. The course also includes in-depth training on React, Redux, and various architectural
 > approaches, culminating in hands-on projects to solidify your skills.
 ## Info
-* **Status:** *In progress*
+* **Status:** *Completed*
 * **Lessons:** *223*
 * **Time:** *66,5 hours*
 * **Link:** *<u>[link](https://www.udemy.com/course/javascript_full/learn/lecture/30884698#overview)</u>*
@@ -321,4 +321,4 @@ ___
   * Section 9 -> Completed :tada:
   * Section 10 -> Completed :tada:
 
-### Successful completion of the mandatory part of the course
+### ***Successful completion of the mandatory part of the course***
