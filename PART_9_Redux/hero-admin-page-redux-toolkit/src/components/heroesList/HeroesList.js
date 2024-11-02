@@ -3,10 +3,8 @@ import {useCallback, useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
-import { createSelector } from 'reselect'
-import {fetchHeroes} from '../../actions';
-import {heroesDeleting,heroesFetching } from "../../slice/heroesSlice"
-
+import {heroesDeleting,heroesFetching ,fetchHeroes} from "../../slice/heroesSlice"
+import {filteredHeroesSelector} from "../../slice/heroesSlice"
 
 const HeroesList = () => {
 
@@ -16,22 +14,10 @@ const HeroesList = () => {
     const {request} = useHttp();
 
     useEffect(() => {
-        dispatch(heroesFetching())
-        dispatch(fetchHeroes(request));
+        dispatch(fetchHeroes());
         // eslint-disable-next-line
     }, []);
 
-    const filteredHeroesSelector = createSelector(
-        (state) => state.filters.activeFilter,
-        (state) => state.heroes.heroes,
-        (filter, heroes) => {
-            if(filter === "all"){
-                return heroes
-            } else {
-                return (heroes.filter(item => item.element === filter))
-            }
-        }
-    )
     const filteredHeroes = useSelector(filteredHeroesSelector)
 
     const onDelete = useCallback((id) => {

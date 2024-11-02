@@ -34,6 +34,7 @@ const heroes = createReducer(initialState, builder => {
         .addCase(heroAdd, (state,action) => {
             state.heroes.push(action.payload)
         })
+        .addDefaultCase(() => {})
     }
 )
 

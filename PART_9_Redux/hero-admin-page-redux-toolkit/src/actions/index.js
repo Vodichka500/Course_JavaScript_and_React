@@ -1,17 +1,22 @@
-import {createAction} from "@reduxjs/toolkit";
-import {heroesFetched, heroesFetchingError} from  "../slice/heroesSlice"
-import {filtersFetched, filtersError} from "../slice/filtersSlice"
+// import {createAction} from "@reduxjs/toolkit";
+// import {heroesFetched, heroesFetchingError} from  "../slice/heroesSlice"
+// import {filtersFetched, filtersError} from "../slice/filtersSlice"
 
-export const fetchHeroes = (request) => (dispatch) => {
-    request("http://localhost:3001/heroes")
-        .then(data => dispatch(heroesFetched(data)))
-        .catch(() => dispatch(heroesFetchingError()))
-}
-export const fetchFilters = (request) => (dispatch) => {
-    request("http://localhost:3001/filters", "GET")
-        .then(req => dispatch(filtersFetched(req)))
-        .catch(() => dispatch(filtersError()))
-}
+
+// Теперь fetchHeroes и fetchFilters реализованы с помощью createAsyncThunk в heroSlice и FilterSlice
+
+// export const fetchHeroes = (request) => (dispatch) => {
+//     request("http://localhost:3001/heroes")
+//         .then(data => dispatch(heroesFetched(data)))
+//         .catch(() => dispatch(heroesFetchingError()))
+// }
+// export const fetchFilters = (request) => (dispatch) => {
+//     request("http://localhost:3001/filters", "GET")
+//         .then(req => dispatch(filtersFetched(req)))
+//         .catch(() => dispatch(filtersError()))
+// }
+
+// Теперь action-ы создаются в heroSlice и filtersSlice автоматически
 
 // export const heroesFetching = createAction("HEROES_FETCHING")
 // export const heroesFetched = createAction("HEROES_FETCHED")

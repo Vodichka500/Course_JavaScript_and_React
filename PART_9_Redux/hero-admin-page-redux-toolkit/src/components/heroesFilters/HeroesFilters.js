@@ -3,9 +3,9 @@ import {useEffect} from "react";
 import {useHttp} from "../../hooks/http.hook"
 import Spinner from "../spinner/Spinner";
 
-import {fetchFilters} from "../../actions/index";
-import { filter, filtersFetching} from  "../../slice/filtersSlice"
-
+import { filter, filtersFetching, fetchFilters} from  "../../slice/filtersSlice"
+import {selectAll} from "../../slice/filtersSlice";
+import store from "../../store";
 
 const HeroesFilters = () => {
     const {request} = useHttp()
@@ -22,8 +22,8 @@ const HeroesFilters = () => {
     }
 
     useEffect(() => {
-        dispatch(filtersFetching())
-        dispatch(fetchFilters(request));
+        dispatch(fetchFilters());
+        console.log(store.getState())
     }, []);
 
     if(filtersLoadingStatus === "loading"){
@@ -36,7 +36,8 @@ const HeroesFilters = () => {
         )
     }
 
-    const buttons = filters.map((filter) => {
+
+    const buttons = selectAll(store.getState()).map((filter) => {
         return (
             <button
                 onClick={event =>  onClick(event,filter.type)}

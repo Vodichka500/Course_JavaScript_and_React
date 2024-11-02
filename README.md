@@ -250,15 +250,15 @@ ___
 > - [x] 204.Redux Toolkit: createAction()
 > - [x] 205.Redux Toolkit: createReducer()
 > - [x] 206.Redux Toolkit: createSlice()
-> - [ ] 207.Redux Toolkit: createAsyncThunk()
-> - [ ] 208.Redux Toolkit: createEntityAdapter()
-> - [ ] 209.Pitfalls in Homework Assignments
-> - [ ] 210.Different Project Structures and Material Review
-> - [ ] 211.Redux Toolkit: RTK Query
-> - [ ] 212.What’s Next?
+> - [x] 207.Redux Toolkit: createAsyncThunk()
+> - [x] 208.Redux Toolkit: createEntityAdapter()
+> - [x] 209.Pitfalls in Homework Assignments
+> - [x] 210.Different Project Structures and Material Review
+> - [x] 211.Redux Toolkit: RTK Query
+> - [x] 212.What’s Next?
 
 ### Section 10 - "Epilogue"
-> - [ ] 213.Epilogue
+> - [x] 213.Epilogue
 
  ### Section 11 - "Real JS project in classic style"
 > - [ ] 214.Introduction to Practical Course
@@ -316,4 +316,9 @@ ___
   * Section 8 -> Completed :tada:
 * 15.10.2024 - 01.11.2024
   * Lessons 188 - 206 have been completed
-  
+* 02.11.1014
+  * Lessons 206-223 have been completed
+  * Section 9 -> Completed :tada:
+  * Section 10 -> Completed :tada:
+
+### Successful completion of the mandatory part of the course
