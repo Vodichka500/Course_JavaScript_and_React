@@ -20,5 +20,5 @@ A web application that allows users to explore Marvel characters, comics, and re
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>](https://github.com/Vodichka500/Course_JavaScript_and_React/tree/main/PART_7_React_Intermediate/marvel)
+   git clone https://github.com/Vodichka500/Course_JavaScript_and_React/tree/main/PART_7_React_Intermediate/marvel
    cd marvel-character-explorer
